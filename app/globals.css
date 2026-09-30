@@ -1,0 +1,80 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Inter', system-ui, sans-serif;
+  background: #ffffff;
+  color: #1f2937;
+  line-height: 1.5;
+}
+
+/* ReLens Theme */
+:root {
+  --color-navy: #1a3a52;
+  --color-gold: #c9a961;
+  --color-light-gray: #f5f5f5;
+  --color-white: #ffffff;
+}
+
+/* Button Styles */
+.btn-primary {
+  @apply bg-relens-gold text-relens-navy font-semibold py-2 px-4 rounded-lg hover:bg-opacity-90 transition-all duration-200;
+}
+
+.btn-secondary {
+  @apply bg-relens-navy text-white font-semibold py-2 px-4 rounded-lg hover:bg-opacity-90 transition-all duration-200;
+}
+
+.btn-outline {
+  @apply border-2 border-relens-navy text-relens-navy font-semibold py-2 px-4 rounded-lg hover:bg-relens-navy hover:text-white transition-all duration-200;
+}
+
+/* Card Styles */
+.card {
+  @apply bg-white rounded-xl shadow-sm hover:shadow-lg transition-shadow duration-300;
+}
+
+/* Typography */
+.h1 {
+  @apply text-4xl font-bold text-relens-navy;
+}
+
+.h2 {
+  @apply text-3xl font-bold text-relens-navy;
+}
+
+.h3 {
+  @apply text-2xl font-semibold text-relens-navy;
+}
+
+/* Animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in-up {
+  animation: fadeInUp 0.5s ease-out;
+}
+
+/* Skeleton Loading */
+.skeleton {
+  @apply bg-gray-200 animate-pulse;
+}
