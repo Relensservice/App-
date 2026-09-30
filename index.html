@@ -1,0 +1,466 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"/>
+<meta name="theme-color" content="#082c57"/>
+<meta name="apple-mobile-web-app-capable" content="yes"/>
+<meta name="description" content="ReLens provides lens replacement, progressive lenses, blue cut lenses, photochromic lenses, frame repair and doorstep optical services in Puducherry."/>
+<title>ReLens App — Same Frame. Better Vision.</title>
+<style>
+:root{--navy:#062b55;--navy2:#0a3b73;--gold:#e7aa19;--bg:#f5f7fb;--card:#fff;--text:#10243e;--muted:#6b7788;--line:#e4e9f0;--green:#18a66a;--shadow:0 12px 30px rgba(8,35,67,.09);--r:18px}
+*{box-sizing:border-box}body{margin:0;font-family:Inter,ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Arial;color:var(--text);background:var(--bg)}button,input,select{font:inherit}button{cursor:pointer;border:0}.app{min-height:100vh;padding-bottom:78px}.top{position:sticky;top:0;z-index:20;background:rgba(255,255,255,.96);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}.topin{max-width:1100px;margin:auto;height:70px;display:flex;align-items:center;gap:14px;padding:10px 18px}.logo{height:48px;width:48px;object-fit:contain}.brand{font-weight:900;font-size:25px;letter-spacing:-1px;color:var(--navy)}.brand span{color:var(--gold)}.topactions{margin-left:auto;display:flex;gap:8px}.iconbtn{width:42px;height:42px;border-radius:14px;background:#f0f4f8;color:var(--navy);font-size:18px}.wrap{max-width:1100px;margin:auto;padding:18px}.hero{background:linear-gradient(135deg,#062b55,#0b4b8b);color:#fff;border-radius:26px;padding:24px;position:relative;overflow:hidden;min-height:280px;display:grid;grid-template-columns:1fr 1fr;gap:24px;align-items:center;box-shadow:var(--shadow)}.hero:after{content:"";position:absolute;width:290px;height:290px;border:50px solid rgba(231,170,25,.13);border-radius:50%;right:-80px;top:-90px;z-index:0}.herotext{position:relative;z-index:1}.eyebrow{color:#ffd34f;font-weight:800;font-size:12px;letter-spacing:1.5px;text-transform:uppercase}.hero h1{font-size:38px;line-height:1.05;max-width:600px;margin:8px 0}.hero p{max-width:610px;color:#dbeaff;margin:0 0 18px;font-size:15px}.heroimgarea{display:flex;align-items:center;justify-content:center;position:relative;z-index:1;min-height:200px}.heroimg{font-size:120px;filter:drop-shadow(0 8px 20px rgba(0,0,0,.2))}.sliders{display:flex;gap:12px;overflow-x:auto;overflow-y:hidden;margin-top:16px;scroll-snap-type:x mandatory;padding-bottom:8px}.slide{min-width:88%;flex-shrink:0;scroll-snap-align:start;background:#fff;border:1px solid var(--line);border-radius:20px;padding:18px;box-shadow:var(--shadow)}.slide b{font-size:19px}.slide p{color:var(--muted);margin:7px 0 13px}.search{margin:16px 0;display:flex;gap:10px;background:#fff;border:1px solid var(--line);padding:10px;border-radius:16px;box-shadow:var(--shadow)}.search input{flex:1;border:0;outline:0;background:transparent;font-size:15px}.section{margin-top:24px}.sectionhead{display:flex;justify-content:space-between;align-items:center;margin-bottom:12px}.section h2{margin:0;font-size:21px}.muted{color:var(--muted);font-size:13px}.quick{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}.q{background:#fff;border:1px solid var(--line);border-radius:16px;padding:15px 10px;text-align:center;font-weight:800;color:var(--navy);box-shadow:0 7px 20px rgba(8,35,67,.05);transition:all .2s}.q:hover{box-shadow:var(--shadow);transform:translateY(-2px)}.q i{display:block;font-style:normal;font-size:23px;margin-bottom:6px}.brands{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}.brandcard{background:#fff;border:1px solid var(--line);border-radius:18px;padding:16px;min-height:160px;box-shadow:var(--shadow);display:flex;flex-direction:column;transition:all .2s}.brandcard:hover{box-shadow:0 20px 40px rgba(8,35,67,.12);transform:translateY(-4px)}.brandmark{height:34px;display:flex;align-items:center;font-weight:900;font-size:17px}.goldline{height:3px;width:45px;background:var(--gold);margin:9px 0}.brandcard p{font-size:13px;color:var(--muted);flex-grow:1;margin:0}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.product{background:#fff;border:1px solid var(--line);border-radius:18px;overflow:hidden;box-shadow:var(--shadow);transition:all .2s}.product:hover{box-shadow:0 20px 40px rgba(8,35,67,.12);transform:translateY(-4px)}.pimg{height:150px;background:linear-gradient(145deg,#edf3f8,#fff);display:flex;align-items:center;justify-content:center;font-size:55px}.pbody{padding:14px}.tag{display:inline-block;background:#edf4fb;color:var(--navy);font-size:11px;font-weight:800;border-radius:99px;padding:5px 8px}.price{font-weight:900;font-size:19px;margin:7px 0}.product h3{font-size:16px;margin:8px 0 4px}.product p{font-size:12px;color:var(--muted);min-height:32px}.row{display:flex;gap:8px;align-items:center}.smallbtn{padding:9px 11px;border-radius:11px;background:#edf3f8;color:var(--navy);font-weight:800;transition:all .15s}.smallbtn:hover{background:#d0dceb}.smallbtn.gold{background:var(--gold);color:#08264a}.smallbtn.gold:hover{background:#d9941a}.page{display:none}.page.active{display:block}.panel{background:#fff;border:1px solid var(--line);border-radius:20px;padding:18px;box-shadow:var(--shadow)}.form{display:grid;gap:11px}.form input,.form select,.form textarea{width:100%;padding:12px;border:1px solid var(--line);border-radius:12px;outline:0;background:#fff;font-size:14px}.form input:focus,.form select:focus,.form textarea:focus{border-color:var(--gold);box-shadow:0 0 0 3px rgba(231,170,25,.1)}.two{display:grid;grid-template-columns:1fr 1fr;gap:10px}.status{display:flex;align-items:center;gap:10px;padding:13px 0;border-bottom:1px solid var(--line)}.dot{width:11px;height:11px;border-radius:50%;background:var(--gold)}.dot.done{background:var(--green)}.bottom{position:fixed;z-index:30;bottom:0;left:0;right:0;background:rgba(255,255,255,.97);border-top:1px solid var(--line);display:flex;justify-content:center}.nav{max-width:600px;width:100%;display:grid;grid-template-columns:repeat(5,1fr)}.nav button{background:transparent;padding:9px 4px;color:#708095;font-size:11px;font-weight:800;transition:color .2s}.nav button.active{color:var(--navy)}.nav span{display:block;font-size:20px;margin-bottom:2px}.wa{position:fixed;right:18px;bottom:90px;width:54px;height:54px;border-radius:50%;background:#19b66f;color:#fff;display:flex;align-items:center;justify-content:center;font-size:25px;box-shadow:0 12px 25px rgba(0,0,0,.18);z-index:25;text-decoration:none}.wa:hover{transform:scale(1.08)}.cartcount{position:absolute;background:#e33;color:#fff;border-radius:99px;font-size:9px;padding:2px 5px;margin:-5px 0 0 -5px}.toast{position:fixed;left:50%;bottom:92px;transform:translateX(-50%) translateY(20px);background:#10243e;color:#fff;padding:11px 15px;border-radius:12px;opacity:0;pointer-events:none;transition:.25s;z-index:50}.toast.show{opacity:1;transform:translateX(-50%) translateY(0)}.back{background:transparent;color:var(--navy);font-weight:900;margin-bottom:10px;text-decoration:none;display:inline-block}.orderbox{background:linear-gradient(135deg,#062b55,#0b4b8b);color:#fff;border-radius:18px;padding:18px}.timeline{margin-top:15px}.footer{margin-top:35px;padding:25px 0;color:var(--muted);font-size:12px;text-align:center}.cta{background:var(--gold);color:#08264a;padding:13px 18px;border-radius:13px;font-weight:900;transition:all .2s}.cta:hover{background:#d9941a;transform:translateY(-1px)}.cta.alt{background:#fff;color:var(--navy)}.cta.alt:hover{background:#f5f7fb}
+@media(max-width:760px){.wrap{padding:14px}.topin{height:62px}.brand{font-size:21px}.hero{grid-template-columns:1fr;min-height:auto;padding:20px}.heroimg{font-size:90px}.hero h1{font-size:30px}.quick{grid-template-columns:repeat(2,1fr)}.brands{grid-template-columns:1fr}.grid{grid-template-columns:1fr 1fr}.pimg{height:120px}.two{grid-template-columns:1fr}.sliders{margin-top:12px}.slide{min-width:92%}}
+@media(min-width:900px){.app{padding-bottom:0}.bottom{position:sticky;top:70px;bottom:auto;border-top:0;border-bottom:1px solid var(--line)}.nav{max-width:1100px}.wa{bottom:25px}}
+</style>
+</head>
+<body>
+<div class="app">
+<header class="top"><div class="topin"><img class="logo" src="https://relensservice.github.io/Relensapp/icon-512.png" alt="ReLens"><div class="brand">Re<span>Lens</span></div><div class="topactions"><button class="iconbtn" onclick="go('shop')">⌕</button><button class="iconbtn" onclick="go('cart')">🛒<span id="cartcount" class="cartcount">0</span></button></div></div></header>
+<main class="wrap">
+<section id="home" class="page active">
+<div class="hero">
+<div class="herotext">
+<div class="eyebrow">GIVE YOUR FRAME A SECOND LIFE</div>
+<h1>Same Frame.<br>Better Vision.</h1>
+<p>Lens replacement, premium lens catalogues, doorstep service, appointments and order tracking — all in one ReLens app.</p>
+<div class="row"><button class="cta" onclick="go('booking')">Book Service →</button><button class="cta alt" onclick="go('shop')">Shop Lenses</button></div>
+</div>
+<div class="heroimgarea"><div class="heroimg">👓</div></div>
+</div>
+
+<div class="sliders" id="heroSlides"></div>
+
+<div class="search"><span>🔎</span><input id="homeSearch" placeholder="Search lenses, brands, services..." oninput="searchHome(this.value)"></div>
+
+<div class="section"><div class="sectionhead"><h2>Quick Actions</h2></div><div class="quick"><button class="q" onclick="go('booking')"><i>📅</i>Book Appointment</button><button class="q" onclick="go('orders')"><i>📦</i>Track Order</button><button class="q" onclick="go('shop')"><i>👓</i>Lens Catalog</button><button class="q" onclick="wa()"><i>💬</i>WhatsApp</button></div></div>
+
+<div class="section"><div class="sectionhead"><h2>Shop by Brand</h2><span class="muted">Official sources & catalogues</span></div><div class="brands" id="brandsGrid"></div></div>
+
+<div class="section"><div class="sectionhead"><h2>Popular ReLens Services</h2></div><div class="grid" id="serviceGrid"></div></div>
+
+<div class="section"><div class="sectionhead"><h2>Featured Offers</h2></div><div class="grid" id="offersGrid"></div></div>
+
+<div class="footer">ReLens • Puducherry • Premium Optical Services • Lens Replacement • Pickup & Delivery</div>
+</section>
+
+<section id="shop" class="page">
+<a class="back" onclick="go('home')">← Home</a>
+<div class="panel">
+<div class="sectionhead"><h2>Lens Catalogue</h2><span class="muted" id="brandFilter">All brands</span></div>
+<div class="search"><span>🔎</span><input id="shopSearch" placeholder="Search product or lens type..." oninput="renderProducts()"></div>
+<div class="row" style="flex-wrap:wrap;margin-bottom:14px;gap:8px" id="brandButtons"></div>
+<div class="grid" id="productGrid"></div>
+</div>
+</section>
+
+<section id="booking" class="page">
+<a class="back" onclick="go('home')">← Home</a>
+<div class="panel">
+<h2>Book ReLens Service</h2>
+<p class="muted">Choose a service and preferred doorstep slot. Your request can be confirmed by WhatsApp.</p>
+<div class="form">
+<select id="bservice">
+<option>Lens Replacement</option>
+<option>Progressive Lens Consultation</option>
+<option>Eye Test Assistant</option>
+<option>Frame Repair</option>
+<option>Contact Lens Consultation</option>
+<option>Doorstep Optical Service</option>
+</select>
+<div class="two"><input id="bname" placeholder="Full name"><input id="bphone" placeholder="WhatsApp number"></div>
+<input id="baddress" placeholder="Pickup / service address">
+<div class="two"><input id="bdate" type="date"><select id="btime">
+<option>9:00 AM</option><option>11:00 AM</option><option>1:00 PM</option><option>3:00 PM</option><option>5:00 PM</option><option>7:00 PM</option>
+</select></div>
+<textarea id="bnotes" rows="3" placeholder="Frame / prescription / service notes"></textarea>
+<button class="cta" onclick="confirmBooking()">Confirm Appointment →</button>
+</div>
+</div>
+</section>
+
+<section id="orders" class="page">
+<a class="back" onclick="go('home')">← Home</a>
+<div class="orderbox"><div class="eyebrow">ORDER TRACKING</div><h2 style="margin:6px 0">#RL-2026-1042</h2><p style="margin:0;color:#dbeaff">ValueVis Progressive Lens • Doorstep delivery</p></div>
+<div class="panel timeline">
+<div class="status"><span class="dot done"></span><div><b>Order placed</b><div class="muted">01 Oct 2026 • 01:12 AM</div></div></div>
+<div class="status"><span class="dot done"></span><div><b>Prescription received</b><div class="muted">Verification completed</div></div></div>
+<div class="status"><span class="dot"></span><div><b>Lens processing</b><div class="muted">Next stage</div></div></div>
+<div class="status"><span class="dot"></span><div><b>Quality check</b></div></div>
+<div class="status"><span class="dot"></span><div><b>Out for delivery</b></div></div>
+<div class="status" style="border:0"><span class="dot"></span><div><b>Delivered</b></div></div>
+</div>
+</section>
+
+<section id="cart" class="page">
+<a class="back" onclick="go('shop')">← Shop</a>
+<div class="panel">
+<h2>Your Cart</h2>
+<div id="cartItems"></div>
+<div class="sectionhead" style="margin-top:18px"><b>Total</b><b id="total">₹0</b></div>
+<button class="cta" style="width:100%;margin-top:10px" onclick="checkout()">Proceed to Checkout →</button>
+</div>
+</section>
+
+<section id="support" class="page">
+<a class="back" onclick="go('home')">← Home</a>
+<div class="panel">
+<h2>ReLens Support</h2>
+<p class="muted">Fast help for appointments, lenses, orders and doorstep service.</p>
+<div class="quick">
+<button class="q" onclick="wa()"><i>💬</i>WhatsApp</button>
+<button class="q" onclick="go('booking')"><i>📅</i>Book Service</button>
+<button class="q" onclick="go('orders')"><i>📦</i>Track Order</button>
+<button class="q" onclick="alert('Call ReLens: +91 94883 53749')"><i>📞</i>Call</button>
+</div>
+</div>
+</section>
+
+<section id="profile" class="page">
+<a class="back" onclick="go('home')">← Home</a>
+<div class="panel">
+<h2>My ReLens Account</h2>
+<div class="form">
+<input placeholder="Full name">
+<input placeholder="WhatsApp number">
+<input placeholder="Email">
+<input placeholder="Saved address">
+<button class="cta">Save Profile</button>
+</div>
+<div class="section"><h3>My records</h3><p class="muted">Orders • Appointments • Prescription history • Service history</p></div>
+</div>
+</section>
+</main>
+
+<nav class="bottom"><div class="nav">
+<button data-page="home" onclick="go('home')" class="active"><span>⌂</span>Home</button>
+<button data-page="shop" onclick="go('shop')"><span>👓</span>Shop</button>
+<button data-page="booking" onclick="go('booking')"><span>📅</span>Bookings</button>
+<button data-page="orders" onclick="go('orders')"><span>📦</span>Orders</button>
+<button data-page="profile" onclick="go('profile')"><span>♙</span>Profile</button>
+</div></nav>
+
+<a class="wa" href="https://wa.me/message/3XHYZJ2WIHFTO1" target="_blank" aria-label="WhatsApp Support">◉</a>
+<div id="toast" class="toast"></div>
+
+<script>
+// ============================================================
+// RELENS BRAND & PRODUCT CATALOGUE SYSTEM
+// Modular, extensible architecture for Valuevis, Bausch + Lomb, Essilor & future brands
+// ============================================================
+
+// Brand Database - Extensible structure
+const brands = {
+  valuevis: {
+    name: 'ValueVis',
+    slug: 'valuevis',
+    description: 'Lens replacement and premium lens families.',
+    fullDescription: 'Browse lens families, coatings, indexes and ReLens pricing.',
+    sourceUrl: 'https://www.valuevis.com',
+    sourceLastChecked: '2026-10-01',
+    categories: ['Single Vision', 'Progressive', 'Blue Cut', 'Anti-Glare', 'Photochromic', 'High Index'],
+    logo: '👓',
+    accent: 'linear-gradient(135deg,#062b55,#0b4b8b)'
+  },
+  'bausch-lomb': {
+    name: 'Bausch + Lomb',
+    slug: 'bausch-lomb',
+    description: 'Contact lenses across daily, monthly and specialty categories.',
+    fullDescription: 'Explore daily, monthly and specialty contact lens categories.',
+    sourceUrl: 'https://www.bausch.com/products/contact-lenses/',
+    sourceLastChecked: '2026-10-01',
+    categories: ['Daily Disposable', 'Monthly', 'Toric', 'Multifocal', 'Specialty', 'Lens Care'],
+    logo: '◉',
+    accent: 'linear-gradient(135deg,#234c6d,#6787a3)'
+  },
+  essilor: {
+    name: 'Essilor',
+    slug: 'essilor',
+    description: 'Vision solutions, progressives, protection and coatings.',
+    fullDescription: 'Explore single vision, progressive, protection and lifestyle solutions.',
+    sourceUrl: 'https://www.essilor.com/in-en/products/',
+    sourceLastChecked: '2026-10-01',
+    categories: ['Single Vision', 'Progressive', 'Digital', 'Light Adaptive', 'Anti-Reflective', 'Premium'],
+    logo: '👁️',
+    accent: 'linear-gradient(135deg,#8b6a3f,#c9a961)'
+  }
+};
+
+// Hero Slides - Brand-specific rotating banners
+const heroSlides = [
+  {
+    brand: 'ReLens',
+    title: 'KEEP YOUR FAVOURITE FRAME',
+    subtitle: 'Replace only the lenses.',
+    price: 'Starting from ₹499',
+    cta: 'Replace My Lens',
+    icon: '👓'
+  },
+  {
+    brand: 'ValueVis',
+    title: 'VALUEVIS LENS COLLECTION',
+    subtitle: 'Explore ValueVis lens options.',
+    price: 'Premium clarity',
+    cta: 'View ValueVis',
+    icon: '👓'
+  },
+  {
+    brand: 'Bausch + Lomb',
+    title: 'BAUSCH + LOMB',
+    subtitle: 'Explore contact lens and eye-care products.',
+    price: 'Comfort & clarity',
+    cta: 'Shop Bausch + Lomb',
+    icon: '◉'
+  },
+  {
+    brand: 'Essilor',
+    title: 'ESSILOR LENS SOLUTIONS',
+    subtitle: 'Explore lens technologies for different vision needs.',
+    price: 'Driven by precision',
+    cta: 'Explore Essilor',
+    icon: '👁️'
+  },
+  {
+    brand: 'Doorstep Service',
+    title: 'OPTICAL SERVICE AT YOUR DOORSTEP',
+    subtitle: 'Pickup • Lens Replacement • Delivery',
+    price: 'Convenient & trusted',
+    cta: 'Book Home Service',
+    icon: '🚚'
+  }
+];
+
+// Product Database - Per brand, with official source tracking
+const productDatabase = {
+  valuevis: [
+    { id: 1, name: 'ValueVis Evolux Elite', category: 'Progressive', price: 1999, desc: 'Premium progressive lens family. Final price by prescription.', source_url: 'https://www.valuevis.com', status: 'active' },
+    { id: 2, name: 'ValueVis Blue Cut', category: 'Blue Cut', price: 799, desc: 'Screen-use lens option with protective coatings.', source_url: 'https://www.valuevis.com', status: 'active' },
+    { id: 3, name: 'ValueVis Photochromic', category: 'Photochromic', price: 999, desc: 'Light-adaptive lens option for indoor and outdoor use.', source_url: 'https://www.valuevis.com', status: 'active' },
+    { id: 4, name: 'ValueVis Anti-Glare', category: 'Anti-Glare', price: 899, desc: 'Reduces reflections for clearer vision and comfort.', source_url: 'https://www.valuevis.com', status: 'active' },
+    { id: 5, name: 'ValueVis High Index', category: 'High Index', price: 1299, desc: 'Thin, lightweight lens for high prescriptions.', source_url: 'https://www.valuevis.com', status: 'active' }
+  ],
+  'bausch-lomb': [
+    { id: 10, name: 'Biotrue ONEday', category: 'Daily Disposable', price: 0, desc: 'Contact lens product. Prescription/fitting verification required.', source_url: 'https://www.bausch.com/products/contact-lenses/', status: 'active', requiresRx: true },
+    { id: 11, name: 'INFUSE', category: 'Daily Disposable', price: 0, desc: 'Advanced daily disposable contact lens. Requires valid prescription.', source_url: 'https://www.bausch.com/products/contact-lenses/', status: 'active', requiresRx: true },
+    { id: 12, name: 'ULTRA', category: 'Monthly', price: 0, desc: 'Monthly contact lens family. Prescription/fitting verification required.', source_url: 'https://www.bausch.com/products/contact-lenses/', status: 'active', requiresRx: true },
+    { id: 13, name: 'SofLens Toric', category: 'Toric', price: 0, desc: 'Astigmatism contact lens family. Prescription/fitting verification required.', source_url: 'https://www.bausch.com/products/contact-lenses/', status: 'active', requiresRx: true },
+    { id: 14, name: 'PureVision2', category: 'Monthly', price: 0, desc: 'Monthly wear contact lens. Requires professional verification.', source_url: 'https://www.bausch.com/products/contact-lenses/', status: 'active', requiresRx: true }
+  ],
+  essilor: [
+    { id: 20, name: 'Essilor Single Vision', category: 'Single Vision', price: 0, desc: 'Single-vision lens solutions for individual prescriptions.', source_url: 'https://www.essilor.com/in-en/products/', status: 'active' },
+    { id: 21, name: 'Varilux Progressive', category: 'Progressive', price: 0, desc: 'Progressive solutions. ReLens confirms current MRP for prescription.', source_url: 'https://www.essilor.com/in-en/products/', status: 'active' },
+    { id: 22, name: 'Crizal Anti-Reflective', category: 'Anti-Reflective', price: 0, desc: 'Anti-reflective coating family. Final product depends on prescription.', source_url: 'https://www.essilor.com/in-en/products/', status: 'active' },
+    { id: 23, name: 'Transitions Light Adaptive', category: 'Light Adaptive', price: 0, desc: 'Photochromic lens technology by Transitions. Adapts to light conditions.', source_url: 'https://www.essilor.com/in-en/products/', status: 'active' },
+    { id: 24, name: 'Essilor Digital', category: 'Digital', price: 0, desc: 'Optimized for digital screen use. Reduces eye strain.', source_url: 'https://www.essilor.com/in-en/products/', status: 'active' }
+  ]
+};
+
+// Services & Offers
+const services = [
+  ['Lens Replacement', '👓', 'From ₹499'],
+  ['Blue Cut Lens', '🖥️', '₹799'],
+  ['Photochromic Lens', '☀️', '₹999'],
+  ['Progressive Lens', '👁️', '₹1,999'],
+  ['Frame Repair', '🔧', '₹99'],
+  ['Doorstep Service', '🚚', 'Book now']
+];
+
+const offers = [
+  { name: 'Lens Replacement', price: '₹499', desc: 'Keep your favourite frame', icon: '👓' },
+  { name: 'Blue Cut Lens', price: '₹799', desc: 'Screen-use protection', icon: '🖥️' },
+  { name: 'Photochromic', price: '₹999', desc: 'Light-adaptive lenses', icon: '☀️' },
+  { name: 'Progressive', price: '₹1,999', desc: 'Multiple distances', icon: '👁️' },
+  { name: 'Frame Repair', price: '₹99', desc: 'Restore your frame', icon: '🔧' },
+  { name: 'Anti-Glare', price: '₹999', desc: 'Reduces reflections', icon: '✨' }
+];
+
+// Application State
+let selectedBrand = 'All';
+let cart = [];
+let currentPage = 'home';
+
+// Utility Functions
+function $(id) { return document.getElementById(id); }
+function toast(m) {
+  let t = $('toast');
+  t.textContent = m;
+  t.classList.add('show');
+  clearTimeout(window._t);
+  window._t = setTimeout(() => t.classList.remove('show'), 2200);
+}
+
+// Navigation
+function go(page) {
+  document.querySelectorAll('.page').forEach(x => x.classList.remove('active'));
+  $(page).classList.add('active');
+  document.querySelectorAll('.nav button').forEach(x => x.classList.toggle('active', x.dataset.page === page));
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+  currentPage = page;
+  if (page === 'shop') renderProducts();
+  if (page === 'cart') renderCart();
+}
+
+// Brand Selection
+function selectBrand(b) {
+  selectedBrand = b;
+  $('brandFilter').textContent = b === 'All' ? 'All brands' : b;
+  renderProducts();
+}
+
+// Get all products (filtered by brand or all)
+function getAllProducts() {
+  if (selectedBrand === 'All') {
+    return [...productDatabase.valuevis, ...productDatabase['bausch-lomb'], ...productDatabase.essilor];
+  }
+  let key = Object.keys(brands).find(k => brands[k].name === selectedBrand);
+  return productDatabase[key] || [];
+}
+
+// Render Product Grid
+function renderProducts() {
+  let q = ($('shopSearch')?.value || '').toLowerCase();
+  let allProducts = getAllProducts();
+  let filtered = allProducts.filter(p => (!q || (p.name + ' ' + p.category + ' ' + p.desc).toLowerCase().includes(q)));
+  
+  $('productGrid').innerHTML = filtered.length ? filtered.map(p => `
+    <article class="product">
+      <div class="pimg">${brands[Object.keys(brands).find(k => {
+        let key = k;
+        return productDatabase[key].find(prod => prod.id === p.id);
+      })].logo}</div>
+      <div class="pbody">
+        <span class="tag">${Object.values(brands).find(b => productDatabase[b.slug].find(prod => prod.id === p.id))?.name || 'ReLens'}</span>
+        <h3>${p.name}</h3>
+        <p>${p.category} • ${p.desc}</p>
+        <div class="price">${p.price ? '₹' + p.price : 'Price on request'}</div>
+        <div class="row"><button class="smallbtn gold" onclick="add(${p.id})">Add to cart</button><button class="smallbtn" onclick="details(${p.id})">Details</button></div>
+      </div>
+    </article>
+  `).join('') : '<p class="muted">No products found. Try another search.</p>';
+}
+
+// Product Details
+function details(id) {
+  let allProds = getAllProducts();
+  let p = allProds.find(x => x.id === id);
+  if (!p) return;
+  let brandName = Object.values(brands).find(b => productDatabase[b.slug].find(prod => prod.id === id))?.name || 'ReLens';
+  alert(`${p.name}\n\nBrand: ${brandName}\nCategory: ${p.category}\n\n${p.desc}\n\n${p.requiresRx ? '⚠️ PRESCRIPTION REQUIRED\nReLens team verifies prescription, fitting and availability before order.' : 'ReLens team verifies prescription, availability and final pricing before order.'}`);
+}
+
+// Cart Management
+function add(id) {
+  let allProds = getAllProducts();
+  let p = allProds.find(x => x.id === id);
+  if (!p) return;
+  cart.push(p);
+  updateCount();
+  toast(p.name + ' added to cart');
+}
+
+function updateCount() {
+  $('cartcount').textContent = cart.length;
+}
+
+function renderCart() {
+  let el = $('cartItems');
+  if (!cart.length) {
+    el.innerHTML = '<p class="muted">Your cart is empty. Explore the lens catalogue.</p>';
+    $('total').textContent = '₹0';
+    return;
+  }
+  el.innerHTML = cart.map((p, i) => {
+    let brand = Object.values(brands).find(b => productDatabase[b.slug].find(prod => prod.id === p.id))?.name || 'ReLens';
+    return `<div class="status"><span style="font-size:25px">👓</span><div style="flex:1"><b>${p.name}</b><div class="muted">${brand} • ${p.category}</div></div><b>${p.price ? '₹' + p.price : 'Request'}</b><button class="smallbtn" onclick="cart.splice(${i},1);updateCount();renderCart()">×</button></div>`;
+  }).join('');
+  let t = cart.reduce((s, p) => s + (p.price || 0), 0);
+  $('total').textContent = t ? '₹' + t : 'Price confirmation required';
+}
+
+// Checkout
+function checkout() {
+  if (!cart.length) { toast('Add a lens to cart first'); return; }
+  toast('Checkout preview — connect payment/order backend next');
+  setTimeout(() => go('booking'), 700);
+}
+
+// Booking
+function confirmBooking() {
+  let n = $('bname').value || 'Customer';
+  let p = $('bphone').value || '';
+  let s = $('bservice').value;
+  let d = $('bdate').value || 'Preferred date';
+  let t = $('btime').value;
+  let msg = `ReLens Appointment Request%0A%0AName: ${encodeURIComponent(n)}%0AWhatsApp: ${encodeURIComponent(p)}%0AService: ${encodeURIComponent(s)}%0ADate: ${encodeURIComponent(d)}%0ATime: ${encodeURIComponent(t)}%0AAddress: ${encodeURIComponent($('baddress').value || 'Not provided')}%0ANotes: ${encodeURIComponent($('bnotes').value || '')}`;
+  window.open('https://wa.me/message/3XHYZJ2WIHFTO1?text=' + msg, '_blank');
+  toast('Appointment request prepared');
+}
+
+// WhatsApp
+function wa() {
+  window.open('https://wa.me/message/3XHYZJ2WIHFTO1', '_blank');
+}
+
+// Search from Home
+function searchHome(v) {
+  if (v.trim().length > 1) {
+    selectedBrand = 'All';
+    go('shop');
+    $('shopSearch').value = v;
+    renderProducts();
+  }
+}
+
+// Initialize Home Page
+function initHome() {
+  // Hero slides
+  $('heroSlides').innerHTML = heroSlides.map(h => `
+    <div class="slide">
+      <span class="tag">${h.brand}</span>
+      <b>${h.title}</b>
+      <p>${h.subtitle}</p>
+      <div style="color:var(--gold);font-weight:900;margin:10px 0">${h.price}</div>
+      <button class="smallbtn gold" onclick="${h.brand === 'ReLens' ? "go('booking')" : h.brand === 'Bausch + Lomb' ? "selectBrand('Bausch + Lomb');go('shop')" : h.brand === 'Essilor' ? "selectBrand('Essilor');go('shop')" : h.brand === 'ValueVis' ? "selectBrand('ValueVis');go('shop')" : "go('booking')"}">${h.cta}</button>
+    </div>
+  `).join('');
+
+  // Brand cards
+  $('brandsGrid').innerHTML = Object.values(brands).map(b => `
+    <div class="brandcard">
+      <div class="brandmark">${b.name}</div>
+      <div class="goldline"></div>
+      <p>${b.description}</p>
+      <button class="smallbtn gold" onclick="selectedBrand='${b.name}';go('shop');renderProducts()">${b.name === 'ValueVis' ? 'Explore' : 'Explore'}</button>
+    </div>
+  `).join('');
+
+  // Services
+  $('serviceGrid').innerHTML = services.map(s => `
+    <article class="product">
+      <div class="pimg">${s[1]}</div>
+      <div class="pbody"><h3>${s[0]}</h3><p>Professional ReLens optical service.</p><div class="price">${s[2]}</div><button class="smallbtn gold" onclick="go('booking')">Book Now</button></div>
+    </article>
+  `).join('');
+
+  // Offers
+  $('offersGrid').innerHTML = offers.map(o => `
+    <article class="product">
+      <div class="pimg">${o.icon}</div>
+      <div class="pbody"><h3>${o.name}</h3><p>${o.desc}</p><div class="price">${o.price}</div><button class="smallbtn gold" onclick="go('shop')">Shop Now</button></div>
+    </article>
+  `).join('');
+
+  // Brand buttons in shop
+  $('brandButtons').innerHTML = [
+    '<button class="smallbtn" onclick="selectBrand(\'All\')">All</button>',
+    ...Object.values(brands).map(b => `<button class="smallbtn" onclick="selectBrand('${b.name}')">${b.name}</button>`)
+  ].join('');
+}
+
+// Initialize on load
+window.addEventListener('DOMContentLoaded', initHome);
+initHome();
+renderProducts();
+</script>
+</div>
+</body></html>
